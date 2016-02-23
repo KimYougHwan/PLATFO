@@ -1,5 +1,8 @@
 package co.kr.doosam.login.dao;
 
-public class LoginDaoImpl {
+import org.springframework.stereotype.Repository;
+
+@Repository("loginDao")
+public class LoginDaoImpl implements LoginDao{
 
 }
