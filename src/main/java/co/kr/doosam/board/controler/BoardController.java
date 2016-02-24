@@ -1,4 +1,4 @@
-package co.kr.doosam;
+package co.kr.doosam.board.controler;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
