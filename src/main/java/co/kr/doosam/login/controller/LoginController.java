@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.core.util.StatusPrinter;
 import co.kr.doosam.login.service.LoginService;
 
 
@@ -23,7 +25,8 @@ public class LoginController {
 		
 		log.debug(" [ {} ]" ,"/ 호출" );;
 		
-		
+		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+	    StatusPrinter.print(lc);		
 		
 		return "login";
 	}
