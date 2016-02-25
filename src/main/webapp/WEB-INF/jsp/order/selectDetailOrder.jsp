@@ -45,7 +45,7 @@
 </table>
 <br/>
 <div class="row">
-	<div class="col-md-4 col-md-offset-4 bg-primary">주문 총액 서머리금액 실적 총액 서머리금액</div>
+	<div class="col-md-4 col-md-offset-4 bg-info">주문 총액 서머리금액 실적 총액 서머리금액</div>
 </div>
 <br/>
 	<button class="btn btn-primary pull-right" type="submit">엑셀다운</button>
