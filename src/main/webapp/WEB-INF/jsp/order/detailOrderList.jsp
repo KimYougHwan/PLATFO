@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <head>
     <!-- Bootstrap core CSS -->
-    <link href="resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="resources/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="../resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../resources/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 <div class="container">

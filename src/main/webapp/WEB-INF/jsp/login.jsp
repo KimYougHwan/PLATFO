@@ -45,7 +45,12 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
-
+      <form class="form-signin" action="/order/detailOrderList.do">
+		<button class="btn btn-lg btn-primary btn-block" type="submit">detail</button>
+	  </form>
+	  <form class="form-signin" action="/order/selectDetailOrder.do">
+		<button class="btn btn-lg btn-primary btn-block" type="submit">select</button>
+	  </form>
     </div> <!-- /container -->
 
 
