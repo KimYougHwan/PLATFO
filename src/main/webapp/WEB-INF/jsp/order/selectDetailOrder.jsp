@@ -2,15 +2,14 @@
     pageEncoding="UTF-8"%>
 <head>
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="bootstrap/dist/js/bootstrap.js"></script>
+    <link href="resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="resources/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 <div class="container">
 <br/>
-<div class="row">
-	<button class="btn btn-lg btn-primary pull-right" type="submit">엑셀다운</button>
-</div>
+	<button class="btn btn-primary pull-right" type="submit">엑셀다운</button>
+<br/>
 <br/>
 <table class="table table-bordered">
 	<thead>
@@ -46,9 +45,11 @@
 </table>
 <br/>
 <div class="row">
-	<button class="btn btn-lg btn-primary pull-right" type="submit">엑셀다운</button>
+	<div class="col-md-4 col-md-offset-4 bg-primary">주문 총액 서머리금액 실적 총액 서머리금액</div>
 </div>
-
+<br/>
+	<button class="btn btn-primary pull-right" type="submit">엑셀다운</button>
+<br/>
 <br/>
 <table class="table table-bordered">
 	<thead>
