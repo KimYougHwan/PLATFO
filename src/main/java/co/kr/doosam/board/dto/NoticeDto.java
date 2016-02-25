@@ -1,6 +1,6 @@
 package co.kr.doosam.board.dto;
 
-public class BoardDto {
+public class NoticeDto {
 	
 	private String no;
 	private String title;
