@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class ExcelUploadSearchController {
-	@RequestMapping(value="/excelUploadSearch", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value="/part/excelUploadSearch", method={RequestMethod.GET,RequestMethod.POST})
 	public String excelUploadSearch(){
 		
-		return "partSearch/excelUploadSearch";
+		return "part/excelUploadSearch";
 	}
 }

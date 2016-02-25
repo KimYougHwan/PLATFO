@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class PartSearchController {
 	
-	@RequestMapping(value="/searchLayer", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value="/part/searchLayer", method={RequestMethod.GET,RequestMethod.POST})
 	public String searchLayer(){
 		
-		return "partSearch/searchLayer";
+		return "part/searchLayer";
 	}
 	
 	
-	@RequestMapping(value="/partSearch", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value="/part/partSearch", method={RequestMethod.GET,RequestMethod.POST})
 	public String partSearch(){
 		
-		return "partSearch/partSearch";
+		return "part/partSearch";
 	}
 }

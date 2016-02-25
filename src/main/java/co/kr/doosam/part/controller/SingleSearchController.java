@@ -18,7 +18,7 @@ public class SingleSearchController {
 	@Autowired
 	private PartSearchService partSearchService;
 	
-	@RequestMapping(value="/singleSearch", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value="/part/singleSearch", method={RequestMethod.GET,RequestMethod.POST})
 	public String singleSearch(Model model, PartSearchVo partSearchVo){
 		
 		List<PartSearchVo> list = new ArrayList<PartSearchVo>();
@@ -27,6 +27,6 @@ public class SingleSearchController {
 		
 		model.addAllAttributes(list);
 		
-		return "partSearch/singleSearch";
+		return "part/singleSearch";
 	}
 }

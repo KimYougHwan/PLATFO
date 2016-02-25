@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class HistorySearchController {
-	@RequestMapping(value="/historySearch", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value="/part/historySearch", method={RequestMethod.GET,RequestMethod.POST})
 	public String historySearch(){
 		
-		return "partSearch/historySearch";
+		return "part/historySearch";
 	}
 }
