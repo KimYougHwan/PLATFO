@@ -10,7 +10,7 @@ import co.kr.doosam.part.dao.PartSearchDao;
 import co.kr.doosam.part.service.PartSearchService;
 import co.kr.doosam.part.vo.PartSearchVo;
 
-@Service("partSearch")
+@Service("partSearchService")
 public class PartSearchServiceImpl implements PartSearchService {
 	
 	@Resource(name="partSearchDao")
