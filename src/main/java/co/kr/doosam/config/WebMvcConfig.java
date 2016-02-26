@@ -21,4 +21,15 @@ public class WebMvcConfig extends WebMvcAutoConfigurationAdapter{
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
+	
+	
+    /**
+     * 인터셉터 추가
+     
+    @Override
+    public void addInterceptors(InterceptorRegistry registry)
+    {
+        registry.addInterceptor(new CorsInterceptor());
+    }
+    */
 }

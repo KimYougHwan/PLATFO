@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import co.kr.doosam.login.service.LoginService;
 
-@Service("login")
+@Service("loginService")
 public class LoginServiceImpl implements LoginService {
 	
 }
