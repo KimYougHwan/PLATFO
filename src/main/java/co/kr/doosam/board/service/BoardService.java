@@ -1,9 +1,11 @@
 package co.kr.doosam.board.service;
 
-import co.kr.doosam.board.dto.NoticeDto;
+import java.util.List;
+
+import co.kr.doosam.board.dao.NoticeDao;
 
 public interface BoardService {
 	
-	public void noticeList(NoticeDto bDto);
+	public List<NoticeDao> noticeList();
 
 }
