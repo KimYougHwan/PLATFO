@@ -6,6 +6,5 @@ import co.kr.doosam.board.dao.NoticeDao;
 
 public interface BoardService {
 	
-	public List<NoticeDao> noticeList();
 
 }
