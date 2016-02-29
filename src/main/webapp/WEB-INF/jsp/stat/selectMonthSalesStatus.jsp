@@ -45,11 +45,11 @@ $(document).ready(function(){
 		if($("input:checkbox[id='byProd']").is(":checked")){
 			$("select[name=sel2]").removeAttr("disabled");
 			$("#usr").removeAttr("disabled");
-			$("input:checkbox[id='byBrand']").attr("checked", true);
+			$("input:checkbox[id='byBrand']").prop("checked", true);
 		}else{
 			$("select[name=sel2]").attr("disabled","disabled");
 			$("#usr").attr("disabled","disabled");
-			$("input:checkbox[id='byBrand']").attr("checked", false);
+			$("input:checkbox[id='byBrand']").prop("checked", false);
 		}
 	});
 });
