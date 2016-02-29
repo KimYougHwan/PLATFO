@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class detailListController {
-	@RequestMapping(value = "order/detailOrderList", method={RequestMethod.GET,RequestMethod.POST})
+	@RequestMapping(value = "/order/detailOrderList", method={RequestMethod.GET,RequestMethod.POST})
 	public String detailOrderList(){
 		return "order/detailOrderList";
 	}
