@@ -20,7 +20,12 @@
     <script src="/resources/assets/js/ie-emulation-modes-warning.js"></script>
     <script src="/resources/bootstrap/dist/js/bootstrap-datepicker.js"></script>
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-<link href="/resources/bootstrap/dist/css/bootstrap-datepicker.css" rel='stylesheet prefetch'>
+    
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
     
 </head>
 
@@ -29,17 +34,17 @@
 	    <form class="form-horizontal" enctype="" role="form">
 			<div class="form-inline">
 				<label for="">주문일자</label>
-		        <input type="date"  class="form-control" id=""/>
+		        <input type="date" class="form-control" id="datepicker"/>
 		        <label for="">~</label>
-		        <input type="date" class="form-control" id="toDate"/>
+		        <input type="date" class="form-control" id="datepicker1"/>
 
 
 		        <label for="fromDate">브랜드 </label>
 		        <select class="form-control" id="">
-				    <option>2016</option>
-				    <option>2015</option>
-				    <option>2014</option>
-				    <option>2013</option>
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
 				</select>
 		        <button type="button" class="btn btn-primary" > 조회 </button>
 		        <button type="button" class="btn btn-primary" > 엑셀다운 </button>
@@ -66,16 +71,17 @@
 				</TBODY>
 			</TABLE> 
 		</DIV>
-
 	</div>
+	
 </body>
+<script>
+	
 
 
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js'></script>
-
+	  $(function() {
+	    $( "#datepicker" ).datepicker({dateFormat: "yymmdd"});
+	    $( "#datepicker1" ).datepicker({dateFormat: "yymmdd"});
+	    
+	  });
+</script>
 
