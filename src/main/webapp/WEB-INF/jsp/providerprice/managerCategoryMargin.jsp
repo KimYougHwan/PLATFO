@@ -7,19 +7,21 @@
 </head>
 <body>
 <div class="container">
+	<br>
 	<div class="row">
-		<div>브랜드</div>
-		<div><select>선택</select></div>
-		<div><button class="btn btn-primary" type="submit">조회</button></div>
-		<div><button class="btn btn-primary" type="submit">저장</button></div>
+		<div class="col-md-1">브랜드</div>
+		<div class="col-md-2"><select><option>선택</option></select></div>
+		<div class="col-md-8"><button class="btn btn-primary pull-right" type="submit">조회</button></div>
+		<div class="col-md-1"><button class="btn btn-primary pull-right" type="submit">저장</button></div>
 	</div>
+	<p>
 	<div class="row">
-		<div></div>
-		<div><input type="text"></div>
-		<div>%</div>
-		<div><button class="btn btn-primary" type="submit">일괄적용</button></div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2"><input type="text"></div>
+		<div class="col-md-8">%</div>
+		<div class="col-md-1"><button class="btn btn-primary pull-right" type="submit">일괄적용</button></div>
 	</div>
-	<table>
+	<table class="table table-bordered">
 		<thead>
 			<tr class="bg-primary">
 				<td>품목명</td>

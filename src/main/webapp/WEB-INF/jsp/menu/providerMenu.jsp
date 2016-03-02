@@ -9,19 +9,19 @@
 <div class="container">
 <br>
 <table>
-	<tr>
-		<td>HOME</td>
+	<tr class="bg-success text-muted">
+		<td>HOME&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 	</tr>
 </table>
 <br>
 <table>
-	<tr>
+	<tr class="bg-success text-muted">
 		<td>가격등록</td>
 	</tr>
 	<tr>
 		<td> - 품목별 가격관리</td>
 	</tr>
-	<tr>
+	<tr class="bg-success text-muted">
 		<td>주문현황</td>
 	</tr>
 	<tr>
@@ -36,7 +36,7 @@
 	<tr>
 		<td> - 주문별 완료 처리</td>
 	</tr>
-	<tr>
+	<tr class="bg-success text-muted">
 		<td>통계</td>
 	</tr>
 	<tr>
@@ -54,7 +54,7 @@
 	<tr>
 		<td> - 년별 매출 현황</td>
 	</tr>
-	<tr>
+	<tr class="bg-success text-muted">
 		<td>게시판</td>
 	</tr>
 	<tr>

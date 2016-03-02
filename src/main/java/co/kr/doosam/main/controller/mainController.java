@@ -11,5 +11,9 @@ public class mainController {
 	public String main(){
 		return "main/main";
 	}
-
+	
+	@RequestMapping(value = "/testbchm", method={RequestMethod.GET,RequestMethod.POST})
+	public String testbchm(){
+		return "testbchm";
+	}
 }

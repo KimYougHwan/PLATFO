@@ -8,11 +8,11 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div>공지사항</div>
-		<div><button type="button">더 보기</button></div>
+		<div class="col-md-10">공지사항</div>
+		<div class="col-md-2"><button type="button" class="pull-right">더 보기</button></div>
 	</div>
 	<div class="row">
-		<table>
+		<table class="table table-bordered">
 			<thead>
 				<tr class="bg-primary">
 					<td>제목</td>
@@ -30,11 +30,11 @@
 		</table>
 	</div>
 	<div class="row">
-		<div>당일 주문 리스트</div>
-		<div><button type="button">더 보기</button></div>
+		<div class="col-md-10">당일 주문 리스트</div>
+		<div class="col-md-2"><button type="button" class="pull-right">더 보기</button></div>
 	</div>
 	<div class="row">
-		<table>
+		<table class="table table-bordered">
 			<thead>
 				<tr class="bg-primary">
 					<td>주문번호</td>
@@ -56,11 +56,11 @@
 		</table>
 	</div>
 	<div class="row">
-		<div>주문 마감일 기준 리스트</div>
-		<div><button type="button">더 보기</button></div>
+		<div class="col-md-10">주문 마감일 기준 리스트</div>
+		<div class="col-md-2"><button type="button" class="pull-right">더 보기</button></div>
 	</div>
 	<div class="row">
-		<table>
+		<table class="table table-bordered">
 			<thead>
 				<tr class="bg-primary">
 					<td>주문번호</td>

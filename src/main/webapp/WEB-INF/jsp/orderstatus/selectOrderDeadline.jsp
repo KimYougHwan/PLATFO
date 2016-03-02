@@ -7,8 +7,8 @@
 </head>
 <body>
 <div class="container">
-	
-	<table>
+	<br>
+	<table class="table table-bordered">
 		<thead>
 			<tr class="bg-primary">
 				<td>No</td>

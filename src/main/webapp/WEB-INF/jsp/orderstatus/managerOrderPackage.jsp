@@ -7,16 +7,15 @@
 </head>
 <body>
 <div class="container">
+<br>
 	<div class="row">
-		<div>주문일자</div>
-		<div><input type="text"></div>
-		<div>~</div>
-		<div><input type="text"></div>
-		<div>주문번호</div>
-		<div><input type="text"></div>
-		<div><button class="btn btn-primary" type="submit">조회</button></div>
+		<div class="col-md-1">주문일자</div>
+		<div class="col-md-5"><input type="text"> ~ <input type="text"></div>
+		<div class="col-md-1">주문번호</div>
+		<div class="col-md-2"><input type="text"></div>
+		<div class="col-md-3"><button class="btn btn-primary pull-right" type="submit">조회</button></div>
 	</div>
-	<table>
+	<table class="table table-bordered">
 		<thead>
 			<tr class="bg-primary">
 				<td>No</td>
