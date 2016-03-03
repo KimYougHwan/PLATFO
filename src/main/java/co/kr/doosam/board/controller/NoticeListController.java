@@ -11,11 +11,13 @@ import co.kr.doosam.board.service.BoardService;
 public class NoticeListController {
 		
 	@Autowired
-	BoardService boardService;
+	private BoardService boardService;
 	@RequestMapping(value = "/board/noticeList")
-	public String noticeList(){
-		
+	public String noticeList(String[] args){
+		//SpringApplication.run(NoticeListController.class, args);
+		boardService.saveBoard();
 		return "board/noticeList";
 	}
+
 	
 }

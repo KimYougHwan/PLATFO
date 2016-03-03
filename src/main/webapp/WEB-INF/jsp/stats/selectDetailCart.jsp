@@ -34,9 +34,9 @@
 	    <form class="form-horizontal" enctype="" role="form">
 			<div class="form-inline">
 				<label for="">주문일자</label>
-		        <input type="date" class="form-control" id="datepicker"/>
+		        <input type="date" class="form-control" id="fromDate" onchange="dateTest()" />
 		        <label for="">~</label>
-		        <input type="date" class="form-control" id="datepicker1"/>
+		        <input type="date" class="form-control" id="toDate" onchange="dateTest()"/>
 
 
 		        <label for="fromDate">브랜드 </label>
@@ -67,6 +67,7 @@
 						<Td>1</Td>
 						<Td>2016.02.29</Td>
 						<Td>101,000,000</Td>
+						<Td>101,000,000</Td>
 					</TR>
 				</TBODY>
 			</TABLE> 
@@ -74,14 +75,39 @@
 	</div>
 	
 </body>
+
 <script>
-	
 
+	$(document).ready(function() {
+		//주문 시작일
+		$("#fromDate").datepicker({
+			dateFormat : "yy-mm-dd"
+		});
+		//주문종료일
+		$("#toDate").datepicker({
+			dateFormat : "yy-mm-dd"
+		});
+		
+		//6개월전 일자
+		var frDate = new Date();
+		frDate.setMonth(frDate.getMonth()-6); 
+		$('#fromDate').val($.datepicker.formatDate($.datepicker.ATOM, frDate));
+		
+		//오늘일자
+		$('#toDate').val($.datepicker.formatDate($.datepicker.ATOM, new Date()));
+		
+		
+	});
 
-	  $(function() {
-	    $( "#datepicker" ).datepicker({dateFormat: "yymmdd"});
-	    $( "#datepicker1" ).datepicker({dateFormat: "yymmdd"});
-	    
-	  });
+	function dateTest(){
+		var frDate = new  Date($("#fromDate").datepicker("getDate"));
+		var toDate = new  Date($("#toDate").datepicker("getDate"));
+		if (toDate - frDate < 0){
+		      alert("끝 날짜가 시작날짜보다 이전일수 없습니다"); 
+		      return false;
+		}
+	}
+		
+		
 </script>
 

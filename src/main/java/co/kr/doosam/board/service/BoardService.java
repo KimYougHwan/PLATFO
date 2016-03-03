@@ -1,8 +1,8 @@
 package co.kr.doosam.board.service;
 
-import java.util.List;
-
-public interface BoardService {
-	
-
+public interface BoardService{
+	public void loadBoard();
+	public void saveBoard();
+	public void updateBoard();
+	public void deleteBoard();
 }
