@@ -24,13 +24,13 @@ public class HmcBoard implements Serializable {
 	private int oid;
 		
 	@Column(length=10 , nullable=false ,columnDefinition="varchar(10) comment '게시판 종류'" )
-	private String BoardType;
+	private String boardType;
 	@Column(length=10 , nullable=false ,columnDefinition="varchar(10) comment '게시글 번호'" )
 	private String BoardNumber;
 	@Column(length=50 , nullable=false ,columnDefinition="varchar(50) comment '게시글 제목'" )
-	private String BoardTitle;
+	private String title;
 	@Column(length=50 , nullable=false ,columnDefinition="varchar(50) comment '게시글 내용'" )
-	private String 	BoardComm;
+	private String 	comm;
 	@Column(length=20 , nullable=false ,columnDefinition="varchar(20)  comment '작성자'" )
 	private String	userId;
 	@Column(length=50 , nullable=false ,columnDefinition="varchar(50)  " )
@@ -41,101 +41,85 @@ public class HmcBoard implements Serializable {
 	private String 	modifyUser;
 	@Column(nullable=true ,columnDefinition="DATETIME" )
 	private Date   	modifyDate;
-	
+
+	public int getOid() {
+		return oid;
+	}
+
+	public void setOid(int oid) {
+		this.oid = oid;
+	}
 
 	public String getBoardType() {
-		return BoardType;
+		return boardType;
 	}
-
 
 	public void setBoardType(String boardType) {
-		BoardType = boardType;
+		this.boardType = boardType;
 	}
-
 
 	public String getBoardNumber() {
 		return BoardNumber;
 	}
 
-
 	public void setBoardNumber(String boardNumber) {
 		BoardNumber = boardNumber;
 	}
 
-
-	public String getBoardTitle() {
-		return BoardTitle;
+	public String getTitle() {
+		return title;
 	}
 
-
-	public void setBoardTitle(String boardTitle) {
-		BoardTitle = boardTitle;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
-
-	public String getBoardComm() {
-		return BoardComm;
+	public String getComm() {
+		return comm;
 	}
 
-
-	public void setBoardComm(String boardComm) {
-		BoardComm = boardComm;
+	public void setComm(String comm) {
+		this.comm = comm;
 	}
-
 
 	public String getUserId() {
 		return userId;
 	}
 
-
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-
 
 	public String getCreateUser() {
 		return createUser;
 	}
 
-
 	public void setCreateUser(String createUser) {
 		this.createUser = createUser;
 	}
-
 
 	public Date getCreateDate() {
 		return createDate;
 	}
 
-
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
-
 
 	public String getModifyUser() {
 		return modifyUser;
 	}
 
-
 	public void setModifyUser(String modifyUser) {
 		this.modifyUser = modifyUser;
 	}
-
 
 	public Date getModifyDate() {
 		return modifyDate;
 	}
 
-
 	public void setModifyDate(Date modifyDate) {
 		this.modifyDate = modifyDate;
-	}
-
-
-	@Override
-	public String toString() {
-		return "HmcMember [BoardType=" + BoardType + ", BoardNumber=" + BoardNumber + "]";
 	}
 
 }

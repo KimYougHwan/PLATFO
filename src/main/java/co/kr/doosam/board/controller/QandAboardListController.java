@@ -14,14 +14,12 @@ public class QandAboardListController {
 	@RequestMapping(value = "/board/qAndAboardList")
 	public String qAndAboardList(){
 		//Q&A 게시판 리스트
-		boardService.loadBoard();
 		return "board/qAndAboardList";
 	}
 	
 	@RequestMapping(value = "/board/qAndAboardDelete")
 	public String qAndAboardDelete(){
 		//Q&A 게시판 삭제
-		boardService.deleteBoard();
 		return "board/qAndAboardDelete";
 	}
 	

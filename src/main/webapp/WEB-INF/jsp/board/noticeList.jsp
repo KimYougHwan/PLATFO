@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +20,13 @@
     <script src="/resources/assets/js/ie-emulation-modes-warning.js"></script>
 </head>
 <body>
-	<DIV class="table">
+<div class="container">
+	<DIV class="table" >
 		<TABLE class="table table-striped">
 			<THEAD>
 				<TR class="bg-primary">
 					<TH>No</TH>
-					<TH><input type="checkbox" id="" /></TH>
+					<!-- <TH><input type="checkbox" id="" /></TH>  -->
 					<TH>제목</TH>
 					<TH>내용</TH>
 					<TH>작성자</TH>
@@ -32,59 +34,20 @@
 				</TR>
 			</THEAD>
 			<TBODY>
-				<TR>
-					<Td>1</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>졸립다</Td>
-					<Td>조한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
-				<TR>
-					<Td>2</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>ㅠㅠㅠㅠㅠㅠ</Td>
-					<Td>한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
-				<TR>
-					<Td>3</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>ㅠㅠㅠㅠㅠㅠ</Td>
-					<Td>한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
-				<TR>
-					<Td>4</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>ㅠㅠㅠㅠㅠㅠ</Td>
-					<Td>한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
-				<TR>
-					<Td>5</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>ㅠㅠㅠㅠㅠㅠ</Td>
-					<Td>한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
-				<TR>
-					<Td>6</Td>
-					<Td><input type="checkbox" id="" /></Td>
-					<Td>bootstrap</Td>
-					<Td>ㅠㅠㅠㅠㅠㅠ</Td>
-					<Td>한용</Td>
-					<Td>2016.02.19</Td>
-				</TR>
+				<c:forEach var="noticeList" items="${noticeList}">
+					<TR>
+						<Td>${noticeList.oid}</Td>
+						<!-- <Td><input type="checkbox" id="${noticeList.oid}" /></Td> -->
+						<Td>${noticeList.title}</Td>
+						<Td>${noticeList.comm}</Td>
+						<Td>${noticeList.createUser}</Td>
+						<Td>${noticeList.createDate}</Td>
+					</TR>
+				</c:forEach>
 			</TBODY>
 		</TABLE>
 	</DIV>
-
-
+</div>
 </body>
 </html>
 

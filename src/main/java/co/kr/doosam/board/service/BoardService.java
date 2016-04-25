@@ -1,8 +1,9 @@
 package co.kr.doosam.board.service;
 
+import java.util.ArrayList;
+
+import co.kr.doosam.data.HmcBoard;
+
 public interface BoardService{
-	public void loadBoard();
-	public void saveBoard();
-	public void updateBoard();
-	public void deleteBoard();
+	public ArrayList<HmcBoard> selectNoticeBoardList();
 }

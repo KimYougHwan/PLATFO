@@ -14,7 +14,6 @@ public class QandAboardWriteController {
 	@RequestMapping(value = "/board/qAndAboardWrite")
 	public String qAndAboardWrite(){
 		//Q&A 게시판 글쓰기
-		boardService.saveBoard();
 		return "board/qAndAboardWrite";
 	}
 	

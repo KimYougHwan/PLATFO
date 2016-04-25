@@ -14,7 +14,6 @@ public class QandAboardUpdateController {
 	@RequestMapping(value = "/board/qAndAboardUpdate")
 	public String qAndAboardUpdate(){
 		//Q&A 수정
-		boardService.updateBoard();
 		return "board/qAndAboardUpdate";
 	}
 	
