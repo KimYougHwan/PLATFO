@@ -1,22 +1,20 @@
 package co.kr.doosam.data;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
 import javax.persistence.Table;
 
 @Entity
 @Table(name ="HMC_MEMBER")
 public class HmcMember implements Serializable {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 825799215724547523L;
-	
+	private static final long serialVersionUID = 1855224989336650320L;
+
+
 	public HmcMember(){}
 	
 	@Id
@@ -38,11 +36,11 @@ public class HmcMember implements Serializable {
 	private String 	userFaxNumber;
 	@Column(length=70 , nullable=false ,columnDefinition="varchar(70) " )
 	private String 	userMailAddress;
-	@Column(length=50 , nullable=false ,columnDefinition="varchar(50)  " )
+	@Column(length=20 , nullable=false ,columnDefinition="varchar(20)  " )
 	private String 	createUser;
 	@Column(nullable=false ,columnDefinition="DATETIME " )
 	private Date   	createDate;
-	@Column(length=50 , nullable=true ,columnDefinition="varchar(50) " )
+	@Column(length=20 , nullable=true ,columnDefinition="varchar(20) " )
 	private String 	modifyUser;
 	@Column(nullable=true ,columnDefinition="DATETIME" )
 	private Date   	modifyDate;
@@ -126,6 +124,12 @@ public class HmcMember implements Serializable {
 	public void setModifyDate(Date modifyDate) {
 		this.modifyDate = modifyDate;
 	}
+	
+	@PrePersist
+	public void prePersist(){
+		createDate = new Date();
+	}
+	
 	@Override
 	public String toString() {
 		return "HmcMember [userId=" + userId + ", userPw=" + userPw + ", userName=" + userName + ", userLevelCd="

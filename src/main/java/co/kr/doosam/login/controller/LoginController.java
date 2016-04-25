@@ -1,5 +1,7 @@
 package co.kr.doosam.login.controller;
 
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,16 +19,21 @@ public class LoginController {
 	
 	private Logger log = LoggerFactory.getLogger(this.getClass());
 	
-	@Autowired
+	@Resource
 	private LoginService loginService;
 	
 	@RequestMapping(value="/", method={RequestMethod.GET,RequestMethod.POST})
 	public String loginView(){
 		
-		log.debug(" [ {} ]" ,"/ 호출" );;
+		log.debug(" [ {} ]" ,"/ 호출" );
 		
-		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
-	    StatusPrinter.print(lc);		
+		loginService.selectCountHmcMember();
+		
+		
+		//LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+	    //StatusPrinter.print(lc);
+		
+		
 		
 		return "login";
 	}

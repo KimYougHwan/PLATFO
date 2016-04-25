@@ -10,24 +10,4 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RootConfig {
 
-	@Bean(destroyMethod="close")
-	public DataSource dataSource(){
-		BasicDataSource datasource = new BasicDataSource();
-		datasource.setDriverClassName("com.mysql.jdbc.Driver");
-		datasource.setUrl("jdbc:mysql://175.198.36.131:3306/hmc");
-		datasource.setUsername("hmcuser");
-		datasource.setPassword("hmcuser!120");
-		datasource.setInitialSize(400);
-		datasource.setMaxTotal(400);
-		datasource.setMaxIdle(400);
-		datasource.setMaxWaitMillis(7000);
-		datasource.setRemoveAbandonedTimeout(5);
-		datasource.setRemoveAbandonedOnBorrow(true);
-		datasource.setRemoveAbandonedOnMaintenance(true);
-		datasource.setDefaultAutoCommit(true);
-		 
-		return datasource;
-	}
-	
-	
 }

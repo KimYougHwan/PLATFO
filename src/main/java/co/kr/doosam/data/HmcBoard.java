@@ -5,21 +5,24 @@ import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name ="HMC_MEMBER")
+@Table(name ="HMC_BOARD")
 public class HmcBoard implements Serializable {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 825799215724547523L;
-	
+	private static final long serialVersionUID = 4931474486972057522L;
+
+
 	public HmcBoard(){}
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int oid;
+		
 	@Column(length=10 , nullable=false ,columnDefinition="varchar(10) comment '게시판 종류'" )
 	private String BoardType;
 	@Column(length=10 , nullable=false ,columnDefinition="varchar(10) comment '게시글 번호'" )
