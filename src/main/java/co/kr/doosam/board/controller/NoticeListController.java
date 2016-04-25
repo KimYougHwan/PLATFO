@@ -31,9 +31,9 @@ public class NoticeListController {
 		int endPage = currntPage + pageNum;  //보여질 페이지 num 끝
 		int test = 9; //페이지 넘버리스트
 		boardList = new ArrayList<HmcBoard>();		
-		
 		boardList = boardService.selectNoticeBoardList();
 		
+		/*
 		if(totalPage > 0){
 			if(totalPage < 10){
 				for(int i = 0; i < totalPage; i++){
@@ -60,6 +60,7 @@ public class NoticeListController {
 				System.out.println("3");
 			}
 		}
+		*/
 		model.addAttribute("noticeList",boardList);
 		return "board/noticeList";
 	}
