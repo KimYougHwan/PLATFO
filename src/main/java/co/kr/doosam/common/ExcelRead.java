@@ -110,7 +110,6 @@ public class ExcelRead {
                  * 만들어진 Map 객체를 List에 넣는다.
                  */
                 result.add(map);
-                System.out.println("====================read==================="+map.get("A"));
             }
             
         }
@@ -132,7 +131,7 @@ public class ExcelRead {
         List<Map<String, String>> result = ExcelRead.read(ro);
         
         for(Map<String, String> map : result) {
-            System.out.println("======================================="+map.get("A"));
+            System.out.println(map.get("A"));
         }
     }
     
